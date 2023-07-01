@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>Hello World</title>
+    <url>/2023/06/24/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>Algorithms</title>
+    <url>/2023/06/26/Algorithms/</url>
+    <content><![CDATA[<p>The great algorithms are the poetry of computation - Francis Sullivan</p>
+<h1 id="Section-one-Fundamentals"><a href="#Section-one-Fundamentals" class="headerlink" title="Section one: Fundamentals"></a>Section one: Fundamentals</h1><h2 id="Steps-for-buiding-algorithm"><a href="#Steps-for-buiding-algorithm" class="headerlink" title="Steps for buiding algorithm:"></a>Steps for buiding algorithm:</h2><ul>
+<li>Model the problem</li>
+<li>Find an algorithm</li>
+<li>Fast? Fits in memory?</li>
+<li>Find a why to address problem if not, iterate untill satisified</li>
+</ul>
+<hr>
+<h2 id="1-Union-Find"><a href="#1-Union-Find" class="headerlink" title="1. Union-Find"></a>1. Union-Find</h2><h3 id="1-1-Dynamic-connectivity"><a href="#1-1-Dynamic-connectivity" class="headerlink" title="1.1 Dynamic connectivity"></a>1.1 Dynamic connectivity</h3><h4 id="Problem-desceription"><a href="#Problem-desceription" class="headerlink" title="Problem desceription:"></a><em>Problem desceription</em>:</h4><p>Given a set of N objects.</p>
+<ul>
+<li>Union command: connect two objects.</li>
+<li>Find/connected query: is there a path connecting the two objects?</li>
+</ul>
+<h4 id="Problem-Modeling"><a href="#Problem-Modeling" class="headerlink" title="Problem Modeling:"></a><em>Problem Modeling</em>:</h4><ul>
+<li>Reflexive: p is connected to p.</li>
+<li>Symmetric: if p is connected to q, then q is connected to p.</li>
+<li>Transitive: if p is connected to q and q is connected to r,<br>then p is connected to r</li>
+</ul>
+<p><em>Connected components</em>: Maximal set of objects that are mutually<br>connected.</p>
+<p><img src="/2023/06/26/Algorithms/06/26/Algorithms/1.png" alt="alt"></p>
+]]></content>
+  </entry>
+</search>
