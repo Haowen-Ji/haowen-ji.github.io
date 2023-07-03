@@ -209,7 +209,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2023-07-03 00:14:32" itemprop="dateModified" datetime="2023-07-03T00:14:32+08:00">2023-07-03</time>
+                <time title="Modified: 2023-07-03 15:45:12" itemprop="dateModified" datetime="2023-07-03T15:45:12+08:00">2023-07-03</time>
               </span>
 
           
@@ -236,13 +236,25 @@
 <li>Union command: connect two objects.</li>
 <li>Find/connected query: is there a path connecting the two objects?</li>
 </ul>
-<h4 id="Problem-Modeling"><a href="#Problem-Modeling" class="headerlink" title="Problem Modeling:"></a><em>Problem Modeling</em>:</h4><ul>
+<h4 id="Problem-Modeling"><a href="#Problem-Modeling" class="headerlink" title="Problem Modeling:"></a><em>Problem Modeling</em>:</h4><p><em>“is connected to”</em>:</p>
+<ul>
 <li>Reflexive: p is connected to p.</li>
 <li>Symmetric: if p is connected to q, then q is connected to p.</li>
 <li>Transitive: if p is connected to q and q is connected to r,<br>then p is connected to r</li>
 </ul>
 <p><em>Connected components</em>: Maximal set of objects that are mutually<br>connected.</p>
 <p><img src="/2023/06/26/Algorithms/1.jpg" alt="Fig.1"></p>
+<p><em>Find query</em>: Check if two objects are in the same component.</p>
+<p><em>Union</em>: Replace compenents containing two obejects with their union. i.e., if we union(2,5) for Figure 1</p>
+<p><em>Union-find data type</em>:<br><img src="/2023/06/26/Algorithms/2.jpg" alt="Fig.2"></p>
+<h3 id="1-2-Solution-1-Quick-find-eager-approach"><a href="#1-2-Solution-1-Quick-find-eager-approach" class="headerlink" title="1.2 Solution 1: Quick find (eager approach)"></a>1.2 Solution 1: Quick find (eager approach)</h3><p><em>Data Structure</em>:</p>
+<ul>
+<li>Integer array id[] of size N.</li>
+<li>Interpretation: p and q are cooneted iff have the same id.<br><img src="/2023/06/26/Algorithms/3.jpg" alt="Fig.3"><br><em>Solution</em>:</li>
+<li>Find: Check if p and q have the same id</li>
+<li>Union: If union p and q, change id[p] to id[q]</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">QuickFindUF</span>&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="type">int</span>[] id;</span><br><span class="line"></span><br><span class="line">    pulic <span class="title function_">QuickFindUF</span><span class="params">(<span class="type">int</span> N)</span></span><br><span class="line">    &#123;</span><br><span class="line">            id = <span class="keyword">new</span> <span class="title class_">int</span>[N];</span><br><span class="line">            <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i&lt;N; i++&gt;) id[i] = i;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="type">boolean</span> <span class="title function_">connected</span><span class="params">(<span class="type">int</span> p, <span class="type">int</span> q)</span>&#123;</span><br><span class="line">        <span class="keyword">return</span> id[p] == id[q]</span><br><span class="line">    &#125;    </span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">union</span><span class="params">(<span class="type">int</span> p, <span class="type">int</span> q)</span>&#123;</span><br><span class="line">        <span class="type">int</span> <span class="variable">pid</span> <span class="operator">=</span> id[p];</span><br><span class="line">        <span class="type">int</span> <span class="variable">qid</span> <span class="operator">=</span> idp[q];</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> = <span class="number">0</span>; i &lt; id.leangth; i++ )&#123;</span><br><span class="line">            <span class="keyword">if</span> (id[i]==pid) id[i] = qid;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
       
     </div>
