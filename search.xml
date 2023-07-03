@@ -36,7 +36,7 @@
 <li>Transitive: if p is connected to q and q is connected to r,<br>then p is connected to r</li>
 </ul>
 <p><em>Connected components</em>: Maximal set of objects that are mutually<br>connected.</p>
-<p><img src="/2023/06/26/Algorithms/06/26/Algorithms/1.jpg" alt="alt"></p>
+<p><img src="/2023/06/26/Algorithms/1.jpg" alt="Fig.1"></p>
 ]]></content>
   </entry>
 </search>

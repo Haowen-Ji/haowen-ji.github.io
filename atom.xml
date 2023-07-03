@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-07-01T09:22:50.492Z</updated>
+  <updated>2023-07-02T16:14:32.640Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="http://example.com/2023/06/26/Algorithms/"/>
     <id>http://example.com/2023/06/26/Algorithms/</id>
     <published>2023-06-26T12:35:04.000Z</published>
-    <updated>2023-07-01T09:22:50.492Z</updated>
+    <updated>2023-07-02T16:14:32.640Z</updated>
     
-    <content type="html"><![CDATA[<p>The great algorithms are the poetry of computation - Francis Sullivan</p><h1 id="Section-one-Fundamentals"><a href="#Section-one-Fundamentals" class="headerlink" title="Section one: Fundamentals"></a>Section one: Fundamentals</h1><h2 id="Steps-for-buiding-algorithm"><a href="#Steps-for-buiding-algorithm" class="headerlink" title="Steps for buiding algorithm:"></a>Steps for buiding algorithm:</h2><ul><li>Model the problem</li><li>Find an algorithm</li><li>Fast? Fits in memory?</li><li>Find a why to address problem if not, iterate untill satisified</li></ul><hr><h2 id="1-Union-Find"><a href="#1-Union-Find" class="headerlink" title="1. Union-Find"></a>1. Union-Find</h2><h3 id="1-1-Dynamic-connectivity"><a href="#1-1-Dynamic-connectivity" class="headerlink" title="1.1 Dynamic connectivity"></a>1.1 Dynamic connectivity</h3><h4 id="Problem-desceription"><a href="#Problem-desceription" class="headerlink" title="Problem desceription:"></a><em>Problem desceription</em>:</h4><p>Given a set of N objects.</p><ul><li>Union command: connect two objects.</li><li>Find/connected query: is there a path connecting the two objects?</li></ul><h4 id="Problem-Modeling"><a href="#Problem-Modeling" class="headerlink" title="Problem Modeling:"></a><em>Problem Modeling</em>:</h4><ul><li>Reflexive: p is connected to p.</li><li>Symmetric: if p is connected to q, then q is connected to p.</li><li>Transitive: if p is connected to q and q is connected to r,<br>then p is connected to r</li></ul><p><em>Connected components</em>: Maximal set of objects that are mutually<br>connected.</p><p><img src="/2023/06/26/Algorithms/06/26/Algorithms/1.jpg" alt="alt"></p>]]></content>
+    <content type="html"><![CDATA[<p>The great algorithms are the poetry of computation - Francis Sullivan</p><h1 id="Section-one-Fundamentals"><a href="#Section-one-Fundamentals" class="headerlink" title="Section one: Fundamentals"></a>Section one: Fundamentals</h1><h2 id="Steps-for-buiding-algorithm"><a href="#Steps-for-buiding-algorithm" class="headerlink" title="Steps for buiding algorithm:"></a>Steps for buiding algorithm:</h2><ul><li>Model the problem</li><li>Find an algorithm</li><li>Fast? Fits in memory?</li><li>Find a why to address problem if not, iterate untill satisified</li></ul><hr><h2 id="1-Union-Find"><a href="#1-Union-Find" class="headerlink" title="1. Union-Find"></a>1. Union-Find</h2><h3 id="1-1-Dynamic-connectivity"><a href="#1-1-Dynamic-connectivity" class="headerlink" title="1.1 Dynamic connectivity"></a>1.1 Dynamic connectivity</h3><h4 id="Problem-desceription"><a href="#Problem-desceription" class="headerlink" title="Problem desceription:"></a><em>Problem desceription</em>:</h4><p>Given a set of N objects.</p><ul><li>Union command: connect two objects.</li><li>Find/connected query: is there a path connecting the two objects?</li></ul><h4 id="Problem-Modeling"><a href="#Problem-Modeling" class="headerlink" title="Problem Modeling:"></a><em>Problem Modeling</em>:</h4><ul><li>Reflexive: p is connected to p.</li><li>Symmetric: if p is connected to q, then q is connected to p.</li><li>Transitive: if p is connected to q and q is connected to r,<br>then p is connected to r</li></ul><p><em>Connected components</em>: Maximal set of objects that are mutually<br>connected.</p><p><img src="/2023/06/26/Algorithms/1.jpg" alt="Fig.1"></p>]]></content>
     
     
       
