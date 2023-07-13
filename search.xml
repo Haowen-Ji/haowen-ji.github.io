@@ -18,7 +18,7 @@
     <title>Algorithms</title>
     <url>/2023/06/26/Algorithms/</url>
     <content><![CDATA[<p>The great algorithms are the poetry of computation - Francis Sullivan</p>
-<h1 id="Section-one-Fundamentals"><a href="#Section-one-Fundamentals" class="headerlink" title="Section one: Fundamentals"></a>Section one: Fundamentals</h1><h2 id="Steps-for-buiding-algorithm"><a href="#Steps-for-buiding-algorithm" class="headerlink" title="Steps for buiding algorithm:"></a>Steps for buiding algorithm:</h2><ul>
+<h1 id="Section-I-Algorithms-Analysis"><a href="#Section-I-Algorithms-Analysis" class="headerlink" title="Section I: Algorithms Analysis"></a>Section I: Algorithms Analysis</h1><h1 id="Section-II-Fundamentals"><a href="#Section-II-Fundamentals" class="headerlink" title="Section II: Fundamentals"></a>Section II: Fundamentals</h1><h2 id="Steps-for-buiding-algorithm"><a href="#Steps-for-buiding-algorithm" class="headerlink" title="Steps for buiding algorithm:"></a>Steps for buiding algorithm:</h2><ul>
 <li>Model the problem</li>
 <li>Find an algorithm</li>
 <li>Fast? Fits in memory?</li>
