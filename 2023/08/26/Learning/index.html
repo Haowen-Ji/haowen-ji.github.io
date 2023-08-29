@@ -20,16 +20,23 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":5,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="James Blog">
-<meta property="og:url" content="http://example.com/archives/index.html">
+  <meta name="description" content="Section I: What a data scientist do?1.3 Data Labeling  Semi-Supervised Learning (SSL) Scenario: a small amount of labeled data, along with large amount of unlabeled data Make assumptions on data distr">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Practical Machine Learning (Stanford-cs329)">
+<meta property="og:url" content="http://example.com/2023/08/26/Learning/index.html">
 <meta property="og:site_name" content="James Blog">
+<meta property="og:description" content="Section I: What a data scientist do?1.3 Data Labeling  Semi-Supervised Learning (SSL) Scenario: a small amount of labeled data, along with large amount of unlabeled data Make assumptions on data distr">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://example.com/2023/08/26/Learning/08/26/Learning/dl.png">
+<meta property="og:image" content="http://example.com/2023/08/26/Learning/08/26/Learning/dp.png">
+<meta property="article:published_time" content="2023-08-26T11:20:54.000Z">
+<meta property="article:modified_time" content="2023-08-29T12:35:54.831Z">
 <meta property="article:author" content="Haowen(James) Ji">
 <meta property="article:tag" content="Algorithms, Database, Software Development">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/2023/08/26/Learning/08/26/Learning/dl.png">
 
-<link rel="canonical" href="http://example.com/archives/">
+<link rel="canonical" href="http://example.com/2023/08/26/Learning/">
 
 
 <script id="page-configurations">
@@ -37,12 +44,12 @@
   CONFIG.page = {
     sidebar: "",
     isHome : false,
-    isPost : false,
+    isPost : true,
     lang   : 'en'
   };
 </script>
 
-  <title>Archive | James Blog</title>
+  <title>Practical Machine Learning (Stanford-cs329) | James Blog</title>
   
 
 
@@ -177,90 +184,143 @@
         <div class="content-wrap">
           
 
-          <div class="content archive">
+          <div class="content post posts-expand">
             
 
+    
   
   
-  
-  <div class="post-block">
-    <div class="posts-collapse">
-      <div class="collection-title">
-        <span class="collection-header">Um..! 3 posts in total. Keep on posting.</span>
-      </div>
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2023/08/26/Learning/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Haowen(James) Ji">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="James Blog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Practical Machine Learning (Stanford-cs329)
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2023-08-26 19:20:54" itemprop="dateCreated datePublished" datetime="2023-08-26T19:20:54+08:00">2023-08-26</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2023-08-29 20:35:54" itemprop="dateModified" datetime="2023-08-29T20:35:54+08:00">2023-08-29</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-    <div class="collection-year">
-      <span class="collection-header">2023</span>
-    </div>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2023-08-26T19:20:54+08:00"
-              content="2023-08-26">
-          08-26
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2023/08/26/Learning/" itemprop="url">
-            <span itemprop="name">Practical Machine Learning (Stanford-cs329)</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2023-06-26T20:35:04+08:00"
-              content="2023-06-26">
-          06-26
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2023/06/26/Algorithms/" itemprop="url">
-            <span itemprop="name">Algorithms</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2023-06-24T22:04:42+08:00"
-              content="2023-06-24">
-          06-24
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2023/06/24/hello-world/" itemprop="url">
-            <span itemprop="name">Hello World</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
+        <h1 id="Section-I-What-a-data-scientist-do"><a href="#Section-I-What-a-data-scientist-do" class="headerlink" title="Section I: What a data scientist do?"></a>Section I: What a data scientist do?</h1><h2 id="1-3-Data-Labeling"><a href="#1-3-Data-Labeling" class="headerlink" title="1.3 Data Labeling"></a>1.3 Data Labeling</h2><p> <img src="08/26/Learning/dl.png" alt="Fig.1"></p>
+<h3 id="Semi-Supervised-Learning-SSL"><a href="#Semi-Supervised-Learning-SSL" class="headerlink" title="Semi-Supervised Learning (SSL)"></a>Semi-Supervised Learning (SSL)</h3><ul>
+<li>Scenario: a <strong>small</strong> amount of labeled data, along with <strong>large</strong> amount of unlabeled data</li>
+<li>Make assumptions on <font color="#0000dd"><strong>data distribution</strong></font><br>  to use unlabeled data<ul>
+<li><strong>Continuity assumption</strong></li>
+<li><strong>Cluster assumption</strong> </li>
+<li><strong>Manifold assumption</strong>: data lie on a manifold of much lower dimension than the input space</li>
+</ul>
+</li>
+</ul>
+<h3 id="Self-training"><a href="#Self-training" class="headerlink" title="Self-training"></a>Self-training</h3><ul>
+<li>A type of SSL<ol>
+<li>Use labeled data train a model</li>
+<li>Utilise the model to predict unlabeled data and get <strong>pseudo-labeled data</strong> (Only keep highly confident predictions)</li>
+<li>Merge the newly labled data to train a better model</li>
+</ol>
+</li>
+<li>Expensive model can be applied<ul>
+<li>Deep NN, model ensemble/bagging</li>
+</ul>
+</li>
+</ul>
+<h3 id="Label-through-corwdsourcing"><a href="#Label-through-corwdsourcing" class="headerlink" title="Label through corwdsourcing"></a>Label through corwdsourcing</h3><ul>
+<li>Hiring workers to label</li>
+<li>e.g.: ImageNet, Amazon Mechanical Turk</li>
+</ul>
+<h3 id="Challenges"><a href="#Challenges" class="headerlink" title="Challenges:"></a>Challenges:</h3><ul>
+<li>Simpler user interaction for wokers</li>
+<li>Reduce tasks sent to labelers to save cost<ul>
+<li><strong>Active learning</strong>: Model select the most “interesting” data for labelers</li>
+<li>SSL with human intervention, only send them particular unlabeled data (most uncertain, prediction score is low)</li>
+<li>Utilizing expensive model (query-by-commitee, train multipe models)</li>
+</ul>
+</li>
+<li>Quality control</li>
+</ul>
+<h3 id="Weak-supervision"><a href="#Weak-supervision" class="headerlink" title="Weak supervision"></a>Weak supervision</h3><ul>
+<li>Data programming: heuristic programs to assign labels<ul>
+<li>Keyword search, pattern matching, third-party models</li>
+<li>E.g. design rules to check if YouTube comments are spam or ham<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">check_out</span>(<span class="params">x</span>):</span><br><span class="line">  <span class="keyword">return</span> SPAM <span class="keyword">if</span> <span class="string">&quot;check out&quot;</span> <span class="keyword">in</span> x.lower() <span class="keyword">else</span> ABSTAIN</span><br><span class="line"><span class="keyword">def</span> <span class="title function_">sentiment</span>():</span><br><span class="line">  <span class="keyword">return</span> HAM <span class="keyword">if</span> sentiment_polarity(x) &gt; <span class="number">0.9</span> <span class="keyword">else</span> ABSTAIN</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+<p><img src="08/26/Learning/dp.png" alt="Fig.2"></p>
+<h2 id="2-1-Data-Analysis"><a href="#2-1-Data-Analysis" class="headerlink" title="2.1 Data Analysis"></a>2.1 Data Analysis</h2><h2 id="2-2-Data-Cleaning"><a href="#2-2-Data-Cleaning" class="headerlink" title="2.2 Data Cleaning"></a>2.2 Data Cleaning</h2><h3 id="Data-Errors"><a href="#Data-Errors" class="headerlink" title="Data Errors"></a>Data Errors</h3><ul>
+<li>Data often have errors - the mismatch with ground truth (missing, erroneous or extreme values)</li>
+<li>Good ML models are robust to errors<ul>
+<li>DNN trained with SGD VS Decision trees </li>
+</ul>
+</li>
+<li>Consequences:<ul>
+<li>The training may still converge, but slower</li>
+<li>Accuracy degradation, could be hard to detect</li>
+<li>Deploying these models may impact the quality of the new collected data <ul>
+<li>e.g. positive examples generated by poor recommendation / search results</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
 
     </div>
-  </div>
-  
-  
-  
 
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2023/06/26/Algorithms/" rel="prev" title="Algorithms">
+      <i class="fa fa-chevron-left"></i> Algorithms
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
   
 
 
@@ -313,6 +373,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Section-I-What-a-data-scientist-do"><span class="nav-number">1.</span> <span class="nav-text">Section I: What a data scientist do?</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-3-Data-Labeling"><span class="nav-number">1.1.</span> <span class="nav-text">1.3 Data Labeling</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Semi-Supervised-Learning-SSL"><span class="nav-number">1.1.1.</span> <span class="nav-text">Semi-Supervised Learning (SSL)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Self-training"><span class="nav-number">1.1.2.</span> <span class="nav-text">Self-training</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Label-through-corwdsourcing"><span class="nav-number">1.1.3.</span> <span class="nav-text">Label through corwdsourcing</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Challenges"><span class="nav-number">1.1.4.</span> <span class="nav-text">Challenges:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Weak-supervision"><span class="nav-number">1.1.5.</span> <span class="nav-text">Weak supervision</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-1-Data-Analysis"><span class="nav-number">1.2.</span> <span class="nav-text">2.1 Data Analysis</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-2-Data-Cleaning"><span class="nav-number">1.3.</span> <span class="nav-text">2.2 Data Cleaning</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Data-Errors"><span class="nav-number">1.3.1.</span> <span class="nav-text">Data Errors</span></a></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 

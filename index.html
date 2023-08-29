@@ -116,6 +116,11 @@
     <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
 
   </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags</a>
+
+  </li>
         <li class="menu-item menu-item-archives">
 
     <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a>
@@ -178,6 +183,131 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2023/08/26/Learning/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Haowen(James) Ji">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="James Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2023/08/26/Learning/" class="post-title-link" itemprop="url">Practical Machine Learning (Stanford-cs329)</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2023-08-26 19:20:54" itemprop="dateCreated datePublished" datetime="2023-08-26T19:20:54+08:00">2023-08-26</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2023-08-29 20:35:54" itemprop="dateModified" datetime="2023-08-29T20:35:54+08:00">2023-08-29</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="Section-I-What-a-data-scientist-do"><a href="#Section-I-What-a-data-scientist-do" class="headerlink" title="Section I: What a data scientist do?"></a>Section I: What a data scientist do?</h1><h2 id="1-3-Data-Labeling"><a href="#1-3-Data-Labeling" class="headerlink" title="1.3 Data Labeling"></a>1.3 Data Labeling</h2><p> <img src="08/26/Learning/dl.png" alt="Fig.1"></p>
+<h3 id="Semi-Supervised-Learning-SSL"><a href="#Semi-Supervised-Learning-SSL" class="headerlink" title="Semi-Supervised Learning (SSL)"></a>Semi-Supervised Learning (SSL)</h3><ul>
+<li>Scenario: a <strong>small</strong> amount of labeled data, along with <strong>large</strong> amount of unlabeled data</li>
+<li>Make assumptions on <font color="#0000dd"><strong>data distribution</strong></font><br>  to use unlabeled data<ul>
+<li><strong>Continuity assumption</strong></li>
+<li><strong>Cluster assumption</strong> </li>
+<li><strong>Manifold assumption</strong>: data lie on a manifold of much lower dimension than the input space</li>
+</ul>
+</li>
+</ul>
+<h3 id="Self-training"><a href="#Self-training" class="headerlink" title="Self-training"></a>Self-training</h3><ul>
+<li>A type of SSL<ol>
+<li>Use labeled data train a model</li>
+<li>Utilise the model to predict unlabeled data and get <strong>pseudo-labeled data</strong> (Only keep highly confident predictions)</li>
+<li>Merge the newly labled data to train a better model</li>
+</ol>
+</li>
+<li>Expensive model can be applied<ul>
+<li>Deep NN, model ensemble/bagging</li>
+</ul>
+</li>
+</ul>
+<h3 id="Label-through-corwdsourcing"><a href="#Label-through-corwdsourcing" class="headerlink" title="Label through corwdsourcing"></a>Label through corwdsourcing</h3><ul>
+<li>Hiring workers to label</li>
+<li>e.g.: ImageNet, Amazon Mechanical Turk</li>
+</ul>
+<h3 id="Challenges"><a href="#Challenges" class="headerlink" title="Challenges:"></a>Challenges:</h3><ul>
+<li>Simpler user interaction for wokers</li>
+<li>Reduce tasks sent to labelers to save cost<ul>
+<li><strong>Active learning</strong>: Model select the most “interesting” data for labelers</li>
+<li>SSL with human intervention, only send them particular unlabeled data (most uncertain, prediction score is low)</li>
+<li>Utilizing expensive model (query-by-commitee, train multipe models)</li>
+</ul>
+</li>
+<li>Quality control</li>
+</ul>
+<h3 id="Weak-supervision"><a href="#Weak-supervision" class="headerlink" title="Weak supervision"></a>Weak supervision</h3><ul>
+<li>Data programming: heuristic programs to assign labels<ul>
+<li>Keyword search, pattern matching, third-party models</li>
+<li>E.g. design rules to check if YouTube comments are spam or ham<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">check_out</span>(<span class="params">x</span>):</span><br><span class="line">  <span class="keyword">return</span> SPAM <span class="keyword">if</span> <span class="string">&quot;check out&quot;</span> <span class="keyword">in</span> x.lower() <span class="keyword">else</span> ABSTAIN</span><br><span class="line"><span class="keyword">def</span> <span class="title function_">sentiment</span>():</span><br><span class="line">  <span class="keyword">return</span> HAM <span class="keyword">if</span> sentiment_polarity(x) &gt; <span class="number">0.9</span> <span class="keyword">else</span> ABSTAIN</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+<p><img src="08/26/Learning/dp.png" alt="Fig.2"></p>
+<h2 id="2-1-Data-Analysis"><a href="#2-1-Data-Analysis" class="headerlink" title="2.1 Data Analysis"></a>2.1 Data Analysis</h2><h2 id="2-2-Data-Cleaning"><a href="#2-2-Data-Cleaning" class="headerlink" title="2.2 Data Cleaning"></a>2.2 Data Cleaning</h2><h3 id="Data-Errors"><a href="#Data-Errors" class="headerlink" title="Data Errors"></a>Data Errors</h3><ul>
+<li>Data often have errors - the mismatch with ground truth (missing, erroneous or extreme values)</li>
+<li>Good ML models are robust to errors<ul>
+<li>DNN trained with SGD VS Decision trees </li>
+</ul>
+</li>
+<li>Consequences:<ul>
+<li>The training may still converge, but slower</li>
+<li>Accuracy degradation, could be hard to detect</li>
+<li>Deploying these models may impact the quality of the new collected data <ul>
+<li>e.g. positive examples generated by poor recommendation / search results</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
     <link itemprop="mainEntityOfPage" href="http://example.com/2023/06/26/Algorithms/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -209,7 +339,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2023-07-13 13:16:36" itemprop="dateModified" datetime="2023-07-13T13:16:36+08:00">2023-07-13</time>
+                <time title="Modified: 2023-08-09 16:12:22" itemprop="dateModified" datetime="2023-08-09T16:12:22+08:00">2023-08-09</time>
               </span>
 
           
@@ -224,7 +354,25 @@
 
       
           <p>The great algorithms are the poetry of computation - Francis Sullivan</p>
-<h1 id="Section-I-Algorithms-Analysis"><a href="#Section-I-Algorithms-Analysis" class="headerlink" title="Section I: Algorithms Analysis"></a>Section I: Algorithms Analysis</h1><h1 id="Section-II-Fundamentals"><a href="#Section-II-Fundamentals" class="headerlink" title="Section II: Fundamentals"></a>Section II: Fundamentals</h1><h2 id="Steps-for-buiding-algorithm"><a href="#Steps-for-buiding-algorithm" class="headerlink" title="Steps for buiding algorithm:"></a>Steps for buiding algorithm:</h2><ul>
+<h1 id="Section-I-Algorithms-Analysis"><a href="#Section-I-Algorithms-Analysis" class="headerlink" title="Section I: Algorithms Analysis"></a>Section I: Algorithms Analysis</h1><h3 id="1-Framework-for-predicting-performance-and-comparing-algorithms"><a href="#1-Framework-for-predicting-performance-and-comparing-algorithms" class="headerlink" title="1. Framework for predicting performance and comparing algorithms"></a>1. Framework for predicting performance and comparing algorithms</h3><ul>
+<li>Observe feature of natural world</li>
+<li>Hypothesize a model that is consistent with the observations</li>
+<li>Predict events using the hypothesis</li>
+<li>Verify the predictions</li>
+<li>validate by repeating</li>
+</ul>
+<h3 id="2-Calculate-Running-Time"><a href="#2-Calculate-Running-Time" class="headerlink" title="2. Calculate Running Time"></a>2. Calculate Running Time</h3><ol>
+<li><p>Cost Model: Use some basic operation as a proxy for running time, for exampel, the array access <code>if (a[i] + a[j] == 0)</code> under for loop.</p>
+</li>
+<li><p>Tilde Notation: Estimate running time (or memory) as a function of input size N. Then ignore lower order terms</p>
+</li>
+</ol>
+<h2 id="Order-of-Growth"><a href="#Order-of-Growth" class="headerlink" title="Order of Growth"></a>Order of Growth</h2><ol>
+<li>Common classifications<br>$1, log N, N, NlogN, N^2, N^3, and 2^N$</li>
+</ol>
+<p>e.g. Binary search:<br>1) P can be in N distinct indexes from 0 to N-1<br>2) P is not present in the list</p>
+<hr>
+<h1 id="Section-II-Fundamentals"><a href="#Section-II-Fundamentals" class="headerlink" title="Section II: Fundamentals"></a>Section II: Fundamentals</h1><h2 id="Steps-for-buiding-algorithm"><a href="#Steps-for-buiding-algorithm" class="headerlink" title="Steps for buiding algorithm:"></a>Steps for buiding algorithm:</h2><ul>
 <li>Model the problem</li>
 <li>Find an algorithm</li>
 <li>Fast? Fits in memory?</li>
@@ -499,7 +647,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-count">3</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
